@@ -198,46 +198,82 @@
         <div class="flex-1 overflow-y-auto px-4 md:px-6 py-6 md:py-8">
           <!-- Featured Section with Inception -->
           <section class="mb-8 md:mb-12">
-            <div
-              class="rounded-xl-custom overflow-hidden bg-blue-800 bg-opacity-40 p-4"
-            >
+            <div class="rounded-xl-custom overflow-hidden">
               <!-- Main Featured Movie with Scenes -->
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="relative">
                 <!-- Main Image -->
-                <div class="md:col-span-2 relative rounded-lg overflow-hidden">
+                <div class="relative rounded-lg h-[700px] lg:h-[600px] overflow-hidden">
                   <img
                     src="/images/img1.png"
                     alt="Inception"
-                    class="w-full h-48 md:h-80 object-cover"
+                    class="w-full h-[700px] lg:h-[600px] object-cover"
                   />
-                  <div
-                    class="absolute bottom-4 left-4 bg-yellow-400 text-blue-900 px-3 py-1 rounded text-sm font-bold"
-                  >
-                    INCEPTION
+                  <div class="absolute top-4 left-4">
+                    <h1 class="uppercase font-bold text-white text-2xl">INCEPTION</h1>
+                    <p class="text-white text-xs my-2">A IMAGI ORIGINAL MOVIE</p>
+                    <div>
+                      <button
+                        class="bg-yellow-400 text-blue-900 px-3 py-1 rounded text-sm font-bold"
+                      >
+                        Watch Now
+                      </button>
+
+                      <button
+                        class="bg-white/25 text-white px-3 py-1 rounded text-sm font-bold"
+                      >
+                        My List +
+                      </button>
+                    </div>
                   </div>
                 </div>
+
                 <!-- Updated featured scenes grid layout for better visual hierarchy -->
-                <div class="grid grid-cols-2 gap-2">
-                  <img
-                    src="/images/img2.png"
-                    alt="Scene 1"
-                    class="w-full h-36 object-cover rounded-lg"
-                  />
-                  <img
-                    src="/images/img3.jpg"
-                    alt="Scene 2"
-                    class="w-full h-36 object-cover rounded-lg"
-                  />
-                  <img
-                    src="/images/img4.jpg"
-                    alt="Scene 3"
-                    class="w-full h-36 object-cover rounded-lg"
-                  />
-                  <img
-                    src="/images/img5.png"
-                    alt="Scene 4"
-                    class="w-full h-36 object-cover rounded-lg"
-                  />
+                <div
+                  class="grid grid-cols-2 lg:grid-cols-4 gap-4 p-5 w-[90%] lg:w-[95%] translate-x-[5%] lg:translate-x-[3%] rounded-lg absolute bottom-4 backdrop-blur-md"
+                >
+                  <div>
+                    <h1 class="text-white font-medium text-lg mb-2">
+                      Episode 1
+                    </h1>
+                    <img
+                      src="/images/img2.png"
+                      alt="Scene 1"
+                      class="w-full h-28 lg:h-44 object-cover rounded-lg"
+                    />
+                  </div>
+
+                  <div>
+                    <h1 class="text-white font-medium text-lg mb-2">
+                      Episode 2
+                    </h1>
+                    <img
+                      src="/images/img3.jpg"
+                      alt="Scene 1"
+                      class="w-full h-28 lg:h-44 object-cover rounded-lg"
+                    />
+                  </div>
+
+                  <div>
+                    <h1 class="text-white font-medium text-lg mb-2">
+                      Episode 3
+                    </h1>
+                    <img
+                      src="/images/img4.jpg"
+                      alt="Scene 1"
+                      class="w-full h-28 lg:h-44 object-cover rounded-lg"
+                    />
+                  </div>
+
+                  <div>
+                    <h1 class="text-white font-medium text-lg mb-2">
+                      Episode 4
+                    </h1>
+                    <img
+                      src="/images/img5.png"
+                      alt="Scene 1"
+                      class="w-full h-28 lg:h-44 object-cover rounded-lg"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -293,10 +329,15 @@
               <h2 class="text-white text-2xl md:text-3xl font-bold mb-4">
                 Choose the plan that's right for you
               </h2>
-              <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-white text-sm md:text-base">
+              <div
+                class="flex flex-col md:flex-row justify-center items-center gap-4 text-white text-sm md:text-base"
+              >
                 <div class="flex items-center gap-2">
                   <i class="fas fa-check check-icon"></i>
-                  <span>Unlimited movies and TV shows. Watch all you want ad-free.</span>
+                  <span
+                    >Unlimited movies and TV shows. Watch all you want
+                    ad-free.</span
+                  >
                 </div>
                 <div class="flex items-center gap-2">
                   <i class="fas fa-check check-icon"></i>
@@ -305,17 +346,21 @@
               </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto"
+            >
               <!-- Basic Plan -->
               <div class="pricing-card rounded-xl-custom p-6 flex flex-col">
                 <div class="text-center mb-6">
                   <h3 class="text-white text-xl font-bold mb-2">Basic</h3>
                   <div class="text-white text-3xl font-bold mb-4">$7.99</div>
-                  <button class="bg-yellow-400 text-blue-900 w-full py-3 rounded font-bold hover:bg-yellow-300 transition">
+                  <button
+                    class="bg-yellow-400 text-blue-900 w-full py-3 rounded font-bold hover:bg-yellow-300 transition"
+                  >
                     Choose Plan
                   </button>
                 </div>
-                
+
                 <div class="flex-1 space-y-4">
                   <div class="flex justify-between items-center">
                     <span class="text-white">HD available</span>
@@ -330,26 +375,36 @@
                     <i class="fas fa-times cross-icon"></i>
                   </div>
                   <div class="flex justify-between items-center">
-                    <span class="text-white">Watch on your mobile phone and tablet</span>
+                    <span class="text-white"
+                      >Watch on your mobile phone and tablet</span
+                    >
                     <i class="fas fa-check check-icon"></i>
                   </div>
-                  <div class="flex justify-between items-center pt-4 border-t border-white border-opacity-20">
-                    <span class="text-white">Screens you can watch on at the same time</span>
+                  <div
+                    class="flex justify-between items-center pt-4 border-t border-white border-opacity-20"
+                  >
+                    <span class="text-white"
+                      >Screens you can watch on at the same time</span
+                    >
                     <span class="text-white font-bold">1</span>
                   </div>
                 </div>
               </div>
-              
+
               <!-- Standard Plan (Highlighted) -->
-              <div class="pricing-card pricing-highlight rounded-xl-custom p-6 flex flex-col">
+              <div
+                class="pricing-card pricing-highlight rounded-xl-custom p-6 flex flex-col"
+              >
                 <div class="text-center mb-6">
                   <h3 class="text-white text-xl font-bold mb-2">Standard</h3>
                   <div class="text-white text-3xl font-bold mb-4">$10.99</div>
-                  <button class="bg-white text-blue-900 w-full py-3 rounded font-bold hover:bg-gray-100 transition">
+                  <button
+                    class="bg-white text-blue-900 w-full py-3 rounded font-bold hover:bg-gray-100 transition"
+                  >
                     Choose Plan
                   </button>
                 </div>
-                
+
                 <div class="flex-1 space-y-4">
                   <div class="flex justify-between items-center">
                     <span class="text-white">HD available</span>
@@ -364,26 +419,34 @@
                     <i class="fas fa-check check-icon"></i>
                   </div>
                   <div class="flex justify-between items-center">
-                    <span class="text-white">Watch on your mobile phone and tablet</span>
+                    <span class="text-white"
+                      >Watch on your mobile phone and tablet</span
+                    >
                     <i class="fas fa-check check-icon"></i>
                   </div>
-                  <div class="flex justify-between items-center pt-4 border-t border-white border-opacity-20">
-                    <span class="text-white">Screens you can watch on at the same time</span>
+                  <div
+                    class="flex justify-between items-center pt-4 border-t border-white border-opacity-20"
+                  >
+                    <span class="text-white"
+                      >Screens you can watch on at the same time</span
+                    >
                     <span class="text-white font-bold">2</span>
                   </div>
                 </div>
               </div>
-              
+
               <!-- Premium Plan -->
               <div class="pricing-card rounded-xl-custom p-6 flex flex-col">
                 <div class="text-center mb-6">
                   <h3 class="text-white text-xl font-bold mb-2">Premium</h3>
                   <div class="text-white text-3xl font-bold mb-4">$13.99</div>
-                  <button class="bg-yellow-400 text-blue-900 w-full py-3 rounded font-bold hover:bg-yellow-300 transition">
+                  <button
+                    class="bg-yellow-400 text-blue-900 w-full py-3 rounded font-bold hover:bg-yellow-300 transition"
+                  >
                     Choose Plan
                   </button>
                 </div>
-                
+
                 <div class="flex-1 space-y-4">
                   <div class="flex justify-between items-center">
                     <span class="text-white">HD available</span>
@@ -398,19 +461,27 @@
                     <i class="fas fa-check check-icon"></i>
                   </div>
                   <div class="flex justify-between items-center">
-                    <span class="text-white">Watch on your mobile phone and tablet</span>
+                    <span class="text-white"
+                      >Watch on your mobile phone and tablet</span
+                    >
                     <i class="fas fa-check check-icon"></i>
                   </div>
-                  <div class="flex justify-between items-center pt-4 border-t border-white border-opacity-20">
-                    <span class="text-white">Screens you can watch on at the same time</span>
+                  <div
+                    class="flex justify-between items-center pt-4 border-t border-white border-opacity-20"
+                  >
+                    <span class="text-white"
+                      >Screens you can watch on at the same time</span
+                    >
                     <span class="text-white font-bold">4</span>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <div class="text-center mt-8">
-              <button class="bg-yellow-400 text-blue-900 px-8 py-3 rounded font-bold hover:bg-yellow-300 transition">
+              <button
+                class="bg-yellow-400 text-blue-900 px-8 py-3 rounded font-bold hover:bg-yellow-300 transition"
+              >
                 Start your free month
               </button>
             </div>
